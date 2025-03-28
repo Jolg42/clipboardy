@@ -13,11 +13,11 @@ npm install clipboardy
 ## Usage
 
 ```js
-import clipboard from 'clipboardy';
+import clipboard from 'clipboardy'
 
-clipboard.writeSync('🦄');
+clipboard.writeSync('🦄')
 
-clipboard.readSync();
+clipboard.readSync()
 //=> '🦄'
 ```
 
@@ -67,7 +67,7 @@ Read (paste) from the clipboard synchronously.
 
 #### Where can I find the source of the bundled binaries?
 
-The [Linux binary](fallbacks/linux/xsel) is just a bundled version of [`xsel`](https://linux.die.net/man/1/xsel). The source for the [Windows binary](fallbacks/windows/clipboard_x86_64.exe) can be found [here](https://github.com/sindresorhus/win-clipboard).
+The [Linux binary](fallbacks/linux/xsel) is just a bundled version of [`xsel`](https://linux.die.net/man/1/xsel). The source for the [Windows binary](fallbacks/windows/clipboard_x86_64.exe) can be found [here](https://github.com/Jolg42/windows-clipboard).
 
 ## Related
 
