@@ -13,7 +13,7 @@
 	"type": "module",
 	"exports": {
 		"types": "./index.d.ts",
-		"node": "./index.cjs",
+		"node": "./index.js",
 		"default": "./browser.js"
 	},
 	"engines": {
@@ -21,11 +21,9 @@
 	},
 	"sideEffects": false,
 	"scripts": {
-		"test": "xo && ava && tsd",
-		"cjs": "npx rollup index.js --file index.cjs --format cjs"
+		"test": "xo && ava && tsd"
 	},
 	"files": [
-		"index.cjs",
 		"index.js",
 		"index.d.ts",
 		"browser.js",
@@ -52,7 +50,6 @@
 	},
 	"devDependencies": {
 		"ava": "^5.3.1",
-		"rollup": "^4.38.0",
 		"tsd": "^0.29.0",
 		"xo": "^0.56.0"
 	},
