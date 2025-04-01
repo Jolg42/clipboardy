@@ -1,6 +1,6 @@
 {
 	"name": "@jolg42/clipboardy",
-	"version": "4.2.1",
+	"version": "4.2.0",
 	"description": "Access the system clipboard (copy/paste)",
 	"license": "MIT",
 	"repository": "Jolg42/clipboardy",
@@ -22,9 +22,10 @@
 	"sideEffects": false,
 	"scripts": {
 		"test": "xo && ava && tsd",
-		"cjs": "npx rollup index.mjs --file index.js --format cjs"
+		"cjs": "npx rollup index.js --file index.cjs --format cjs"
 	},
 	"files": [
+		"index.cjs",
 		"index.js",
 		"index.d.ts",
 		"browser.js",
