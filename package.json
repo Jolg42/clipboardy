@@ -1,6 +1,6 @@
 {
 	"name": "@jolg42/clipboardy",
-	"version": "4.2.1",
+	"version": "4.2.2",
 	"description": "Access the system clipboard (copy/paste)",
 	"license": "MIT",
 	"repository": "Jolg42/clipboardy",
@@ -10,7 +10,6 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
-	"type": "module",
 	"exports": {
 		"types": "./index.d.ts",
 		"node": "./index.cjs",
