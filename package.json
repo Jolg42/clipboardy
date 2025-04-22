@@ -1,6 +1,6 @@
 {
 	"name": "@jolg42/clipboardy",
-	"version": "4.2.3",
+	"version": "4.2.4",
 	"description": "Access the system clipboard (copy/paste)",
 	"license": "MIT",
 	"repository": "Jolg42/clipboardy",
