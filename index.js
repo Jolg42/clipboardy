@@ -4,12 +4,17 @@ const termux = require('./lib/termux.js');
 const linux = require('./lib/linux.js');
 const macos = require('./lib/macos.js');
 const windows = require('./lib/windows.js');
+const arch = require('arch');
 
 const platformLib = (() => {
 	switch (process.platform) {
 		case 'darwin':
 			return macos;
 		case 'win32':
+			if (arch() !== 'x64') {
+				throw new Error('Clipboardy only supports 64-bit Windows.');
+			}
+
 			return windows;
 		case 'android':
 			if (process.env.PREFIX !== '/data/data/com.termux/files/usr') {
